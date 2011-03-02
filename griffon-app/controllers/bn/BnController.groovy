@@ -7,7 +7,7 @@ class BnController {
     def model
     def view
 
-    def bnDownloaderService = new BnDownloaderService()
+    def bnDownloaderService
 
     GroovyShell shell = new GroovyShell()
 

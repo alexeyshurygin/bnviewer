@@ -20,11 +20,7 @@ class BnDownloaderService {
         HttpResponse response = httpclient.execute(httpget);
         HttpEntity entity = response.getEntity();
         if (entity != null) {
-            InputStream instream = entity.getContent();
-            int l;
-            byte[] tmp = new byte[2048];
-            while ((l = instream.read(tmp)) != -1) {
-            }
+            printStream(entity.getContent())
         }
     }
 
@@ -33,7 +29,9 @@ class BnDownloaderService {
         OutputStreamWriter writer = new OutputStreamWriter(System.out);
         int am;
         char[] buffer = new char[BUFFER_SIZE];
-        while ((am = reader.read(buffer)) != -1)
+        while ((am = reader.read(buffer)) != -1) {
             writer.write(buffer, 0, am);
+        }
+        writer.flush()
     }
 }
