@@ -27,6 +27,7 @@
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="IdProvider" IDEtalkID="D670B6A62C7BC2B3411368D63DEF23FC" />
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />
     <option name="OPTION_SCOPE" value="protected" />
@@ -182,6 +183,21 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+  </component>
+  <component name="WebServicesPlugin" addRequiredLibraries="true" />
+  <component name="libraryTable">
+    <library name="HttpClient">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/commons-codec-1.4.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/httpclient-cache-4.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/httpcore-4.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/httpclient-4.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/httpmime-4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
 </project>
 

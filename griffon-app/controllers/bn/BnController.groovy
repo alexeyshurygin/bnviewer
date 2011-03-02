@@ -7,6 +7,8 @@ class BnController {
     def model
     def view
 
+    def bnDownloaderService = new BnDownloaderService()
+
     GroovyShell shell = new GroovyShell()
 
     // void mvcGroupInit(Map args) {
@@ -25,15 +27,16 @@ class BnController {
     def executeScript(ActionEvent evt = null) {
         model.enabled = false
         doOutside {
-            def result
-            try {
-                result = shell.evaluate(model.scriptSource)
-            } finally {
-                edt {
-                    model.enabled = true
-                    model.scriptResult = result
-                }
-            }
+//            def result
+//            try {
+//                result = shell.evaluate(model.scriptSource)
+//            } finally {
+//                edt {
+//                    model.enabled = true
+//                    model.scriptResult = result
+//                }
+//            }
+            bnDownloaderService.loadData()
         }
     }
 }
