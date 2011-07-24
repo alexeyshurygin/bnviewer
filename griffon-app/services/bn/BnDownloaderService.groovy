@@ -18,7 +18,7 @@ class BnDownloaderService {
         HttpClient httpclient = new DefaultHttpClient();
         HttpGet httpget = new HttpGet("http://www.bn.ru/");
         HttpResponse response = httpclient.execute(httpget);
-        HttpEntity entity = response.getEntity();
+        HttpEntity entity = response.getEntity()
         if (entity != null) {
             printStream(entity.getContent())
         }
